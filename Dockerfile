@@ -1,8 +1,11 @@
-FROM node:14-alpine
+FROM node:21-alpine3.17 AS builder
 WORKDIR /app
 COPY package.json ./
 COPY yarn.lock ./
 RUN yarn install --frozen-lockfile
 COPY . .
-EXPOSE 3000
-CMD ["npm", "start"]
+RUN yarn build
+
+FROM nginx:1.25-alpine3.18-slim AS server
+COPY ./etc/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder ./app/build /usr/share/nginx/html
