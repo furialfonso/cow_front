@@ -11,5 +11,6 @@ FROM nginx:1.25-alpine3.18-slim AS server
 COPY ./etc/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder ./app/dist /usr/share/nginx/html
 
+# npx serve -s dist
 # docker build -t react-docker .
 # docker run -p 8083:8083 react-docker
