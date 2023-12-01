@@ -7,8 +7,8 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="w-screen h-screen bg-body">
-        <div className="w-full h-full pt-12 flex justify-center">
+      <div className="body">
+        <div className="body-content">
           <CowApp />
         </div>
       </div>
