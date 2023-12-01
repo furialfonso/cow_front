@@ -5,7 +5,7 @@ export const LoginPage = () => {
   return (
     <form className="form-login">
       <div className="form-image">
-        <img className="form-image-div" src="/src/assets/cow.svg"></img>
+        <img className="form-image-div" src="/cow.svg"></img>
       </div>
       <input className="form-items" type="text" id="username" placeholder="User"/>
       <input className="form-items" type="password" id="password" placeholder="Password"  />
