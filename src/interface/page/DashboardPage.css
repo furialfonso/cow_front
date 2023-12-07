@@ -11,7 +11,7 @@ header {
   right: 0;
   background-image: linear-gradient(to right, #082f49, #075985);
   display: flex;
-  justify-content: right;
+  /* justify-content: right; */
   align-items: center;
 }
 
@@ -51,4 +51,20 @@ footer {
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 2px 2px #234908;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  header,
+  footer {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    left: 0;
+  }
 }

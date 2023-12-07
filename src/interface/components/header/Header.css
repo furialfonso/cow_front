@@ -17,3 +17,27 @@
 .logout:hover {
   background-color: #4c0519;
 }
+
+.burger-button {
+  background-image: url("/hamburger.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  gap: 1rem;
+  box-shadow: 5px 5px 5px 5px black;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-button {
+    display: block;
+  }
+}
+
+.burger-button:hover {
+  background-color: #e11d48;
+}

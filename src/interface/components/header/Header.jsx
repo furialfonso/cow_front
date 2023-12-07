@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import { useNavigate } from 'react-router-dom'
 
 export const Header = () => {
+  const [showSideBar, setShowSideBar] = useState(true)
   const navigate = useNavigate()
-const logOut = (event) => {
+  const logOut = (event) => {
     event.preventDefault()
-  navigate('/', {
+    navigate('/', {
       replace: true
     })
   }
   return (
     <header>
-      <button className="logout" onClick={(event)=>logOut(event)} >Log Out</button>
+      <div className="burger-button" onClick={()=>{console.log("holas")}}/>
+      <button className="logout" onClick={(event) => logOut(event)} >Log Out</button>
     </header>
   )
 }
