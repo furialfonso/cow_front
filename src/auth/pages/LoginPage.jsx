@@ -13,9 +13,7 @@ export const LoginPage = () => {
 
   return (
     <form className="form-login" onSubmit={(event)=>onLogin(event)}>
-      <div className="form-image">
-        <img className="form-image-div" src="/cow.svg"></img>
-      </div>
+      <div className="form-image"/>
       <input className="form-items" type="text" id="username" placeholder="User" autoComplete="username" />
       <input className="form-items" type="password" id="password" placeholder="Password" autoComplete="current-password" />
       <button className="form-items form-button">Login</button>

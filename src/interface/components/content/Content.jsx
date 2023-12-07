@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Content = () => {
   return (
-    <div>My contenido</div>
+    <div className="content">
+      <h1>Hi BB</h1>
+    </div>
   )
 }
