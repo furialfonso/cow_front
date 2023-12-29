@@ -1,7 +1,8 @@
 import React from 'react'
 import './Sidebar.css'
+import { Button } from './components/Button'
 
-export const Sidebar = () => {
+export const Sidebar = ({ displayValue }) => {
   return (
     <div className="sidebar">
       <div className="side-image" />
@@ -9,10 +10,8 @@ export const Sidebar = () => {
         <p>Cow App</p>
       </div>
       <div className="buttons">
-        <button className="button-bar">button1</button>
-        <button className="button-bar">button2</button>
-        <button className="button-bar">button3</button>
-        <button className="button-bar">button4</button>
+        <Button name={"Find Users"} uri={"/users"} />
+        <Button name={"Others"} uri={"/others"} />
       </div>
     </div>
   )

@@ -1,0 +1,12 @@
+.button-bar{
+  margin-top: 1rem;
+  height: 15%;
+  border-radius: 10px;
+  background-color: #e11d48;
+  box-shadow: 1px 1px 1px 1px #4c0519;
+  color: #d1d5db;
+}
+
+.button-bar:hover {
+  background-color: #4c0519;
+}
