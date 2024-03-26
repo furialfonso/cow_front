@@ -9,7 +9,7 @@ import useIsAuthenticated from 'react-auth-kit/hooks/useIsAuthenticated'
 
 export const LoginPage = () => {
   const isAuthenticated = useIsAuthenticated()
-  let url = 'http://localhost:9002/auth/login'
+  const url = import.meta.env.VITE_COW_SSO_URL;
   const [body, setBody] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [message, setMessage] = useState({});

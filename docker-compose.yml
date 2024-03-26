@@ -2,10 +2,17 @@ version: "3.4"
 
 services:
   app:
+    container_name: ${APPLICATION_NAME}_front_${SCOPE}
+    image: ${REPOSITORY}/${APPLICATION_NAME}_front:${SCOPE}
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./src:/app/src
     ports:
-      - "8083:3000"
+      - ${API_PORT}:${DEFAULT_API_PORT}
+    networks:
+      - cownetwork
+networks:
+  cownetwork:
+    external: true
