@@ -8,8 +8,7 @@ export default defineConfig({
     filename: "cow-front-entry.js",
     shared: ["react", "react-dom", "react-router-dom"],
     remotes: {
-      "user-front": "http://localhost:8082/assets/cow-user-front-entry.js"
-      // "user-front": "http://cow_component_front:3000/assets/cow-user-front-entry.js"
+      "user-front": "http://localhost:8082/assets/cow-component-front-entry.js"
     },
   })],
   build: {
