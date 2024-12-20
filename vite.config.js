@@ -8,7 +8,7 @@ export default defineConfig({
     filename: "cow-front-entry.js",
     shared: ["react", "react-dom", "react-router-dom"],
     remotes: {
-      "user-front": "http://localhost:8082/assets/cow-component-front-entry.js"
+      "user-front": "http://localhost:8081/assets/cow-component-front-entry.js"
     },
   })],
   build: {
@@ -24,6 +24,6 @@ export default defineConfig({
     // add the next lines if you're using windows and hot reload doesn't work
     watch: {
       usePolling: true
-    }
+    },
   },
 })
